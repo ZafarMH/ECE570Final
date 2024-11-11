@@ -49,42 +49,19 @@ Usage
 1. Dataset Preparation
 Download a subset of the COCO dataset if not already available. Place images in the train2017 directory and annotations in the annotations directory, with the structure as shown above.
 
-2. Training the Model
-To train the model, use the following command:
-
-bash
-Copy code
-python main.py --train
-This command will:
-
 Load the dataset.
 Split it into training and testing subsets.
-Train the model on the specified dataset subset.
-3. Evaluating the Model
-To evaluate the trained model, use:
 
-bash
-Copy code
-python main.py --eval
-This command will:
+Train the model on the specified dataset subset
+
+3. Evaluating the Model
+To evaluate the trained model
 
 Load the test dataset.
+
 Evaluate the model on the test data.
+
 Display key metrics such as Mean Average Precision (mAP).
-Optional Arguments
---batch_size: Set the batch size for training/evaluation.
---epochs: Specify the number of epochs for training.
---learning_rate: Set the learning rate for optimization.
-Example
-bash
-Copy code
-python main.py --train --batch_size 8 --epochs 10 --learning_rate 0.001
-Customization
-Changing Backbone: Modify the backbone in the model architecture to experiment with different feature extractors.
-Data Augmentation: Customize data augmentations by editing the transform function in the code.
-Subset Size: Adjust the subset size of the dataset in the data loading section.
-Limitations and Future Work
-This implementation was trained on a small subset of the COCO dataset due to hardware limitations. Consequently, the model may not generalize as well as state-of-the-art methods trained on the full COCO dataset. Future improvements could include:
 
 Using a larger dataset or a full COCO dataset for improved accuracy.
 Optimizing the model structure for efficient inference.
