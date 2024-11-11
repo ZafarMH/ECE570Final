@@ -32,11 +32,7 @@ numpy
 tqdm
 pycocotools
 Setup Instructions
-Clone the repository:
 
-bash
-Copy code
-git clone https://github.com/your-username/repo-name.git
 cd repo-name
 Install dependencies: Install all necessary packages listed in requirements.txt:
 
@@ -45,15 +41,7 @@ Copy code
 pip install -r requirements.txt
 Directory Structure: Ensure your directory is structured as follows:
 
-bash
-Copy code
-├── coco_mini
-│   ├── train2017
-│   ├── annotations
-│       └── instances_train2017.json
-├── requirements.txt
-├── README.md
-└── main.py  # main script for training and evaluation
+
 coco_mini: Folder containing the COCO dataset images and annotations.
 train2017: Folder containing the training images.
 annotations: Folder containing the JSON annotation file (instances_train2017.json).
