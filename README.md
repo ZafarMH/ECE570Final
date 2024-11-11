@@ -39,12 +39,8 @@ Install dependencies: Install all necessary packages listed in requirements.txt:
 bash
 Copy code
 pip install -r requirements.txt
-Directory Structure: Ensure your directory is structured as follows:
 
 
-coco_mini: Folder containing the COCO dataset images and annotations.
-train2017: Folder containing the training images.
-annotations: Folder containing the JSON annotation file (instances_train2017.json).
 Usage
 1. Dataset Preparation
 Download a subset of the COCO dataset if not already available. Place images in the train2017 directory and annotations in the annotations directory, with the structure as shown above.
